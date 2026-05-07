@@ -4,6 +4,7 @@ from flask import Flask, jsonify, render_template, request
 
 app = Flask(__name__)
 
+
 # ── Configuración ──────────────────────────────────────────────
 EXCEL_PATH = os.path.join(os.path.expanduser("~"), "Desktop", "Lineas.xlsx")
 
