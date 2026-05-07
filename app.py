@@ -6,7 +6,8 @@ app = Flask(__name__)
 
 
 # ── Configuración ──────────────────────────────────────────────
-EXCEL_PATH = os.path.join(os.path.expanduser("~"), "Desktop", "Lineas.xlsx")
+EXCEL_PATH = os.path.join(os.path.expanduser("~"), "OneDrive - offcorss.com\Desktop", "Lineas.xlsx")
+
 
 COLUMNAS_REQUERIDAS = [
     "Concepto Diseño",
