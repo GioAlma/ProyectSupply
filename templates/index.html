@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Producción</title>
+  <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body>
+
+  <!-- ── Header ────────────────────────────────────── -->
+  <header class="header">
+    <div class="header-left">
+      <span class="header-badge">PRODUCCIÓN</span>
+      <h1 class="header-title">Control de Piso</h1>
+    </div>
+    <div class="header-right" id="header-meta">—</div>
+  </header>
+
+  <!-- ── Filtro principal: Concepto Diseño ─────────── -->
+  <section class="toolbar">
+    <label class="label-sm" for="sel-concepto">CONCEPTO DISEÑO</label>
+    <div class="select-wrap">
+      <select id="sel-concepto">
+        <option value="">Cargando…</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- ── Segmentación: ESTATUSUSUARIO ──────────────── -->
+  <section class="status-bar" id="status-bar" hidden>
+    <div class="label-sm">ESTADO USUARIO &nbsp;·&nbsp; selecciona uno o varios</div>
+    <div class="status-pills" id="status-pills"></div>
+    <button class="pill pill-all active" id="btn-todos">TODOS</button>
+  </section>
+
+  <!-- ── Tabla de órdenes ───────────────────────────── -->
+  <section class="table-section">
+    <div id="estado-tabla" class="estado-msg">Selecciona un Concepto Diseño para comenzar.</div>
+    <div class="table-wrap" id="table-wrap" hidden>
+      <table id="tabla-ordenes">
+        <thead>
+          <tr>
+            <th>Orden</th>
+            <th>F. Ini Extrema</th>
+            <th>F. Programación</th>
+            <th>Comentarios Compras</th>
+            <th>Puesto Descarga</th>
+            <th>F. Producción</th>
+            <th>Clase OP</th>
+            <th>Planificador</th>
+            <th>Cant. Original</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <div class="table-footer" id="table-footer" hidden></div>
+  </section>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
